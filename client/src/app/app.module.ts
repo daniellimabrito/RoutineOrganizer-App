@@ -14,6 +14,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { DatePipe } from '@angular/common';
 import { AgendaService } from './_services/agenda.service';
+import { DailyCalendarComponent } from './daily-calendar/daily-calendar.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { CalendarComponent } from './calendar/calendar.component';
+import { CalendarFormComponent } from './calendar-form/calendar-form.component';
+import { CalendarModuleModule } from './calendar-module/calendar-module.module';
+
 
 
 @NgModule({
@@ -22,7 +29,10 @@ import { AgendaService } from './_services/agenda.service';
       QuotesComponent,
       AgendaFormComponent,
       DatepickermonthComponent,
-      FormDebugComponent
+      FormDebugComponent,
+      DailyCalendarComponent,
+      CalendarComponent,
+      CalendarFormComponent
    ],
   imports: [
     BrowserModule,
@@ -32,7 +42,8 @@ import { AgendaService } from './_services/agenda.service';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory })
   ],
   providers: [AgendaService, DatePipe],
   bootstrap: [AppComponent]
