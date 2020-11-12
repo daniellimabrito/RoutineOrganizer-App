@@ -14,12 +14,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { DatePipe } from '@angular/common';
 import { AgendaService } from './_services/agenda.service';
-import { DailyCalendarComponent } from './daily-calendar/daily-calendar.component';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { CalendarComponent } from './calendar/calendar.component';
 import { CalendarFormComponent } from './calendar-form/calendar-form.component';
 import { CalendarModuleModule } from './calendar-module/calendar-module.module';
+import { NavComponent } from './nav/nav.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -30,9 +31,10 @@ import { CalendarModuleModule } from './calendar-module/calendar-module.module';
       AgendaFormComponent,
       DatepickermonthComponent,
       FormDebugComponent,
-      DailyCalendarComponent,
       CalendarComponent,
-      CalendarFormComponent
+      CalendarFormComponent,
+      NavComponent,
+      RegisterComponent
    ],
   imports: [
     BrowserModule,
