@@ -8,6 +8,7 @@ import { AlertifyService } from '../_services/alertify.service';
 import { typeWithParameters } from '@angular/compiler/src/render3/util';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { User } from '../_models/User';
 
 @Component({
   selector: 'app-agenda-form',
@@ -23,6 +24,9 @@ export class AgendaFormComponent implements OnInit {
   currentDate: any;
   isDeleteMode: boolean;
   id: string;
+
+  user: User = JSON.parse(localStorage.getItem('user'));
+
 
   emptyAgenda: Agenda = { id : this.emptyId, name : '', activities : '', priorities : '', projects : '', notes : '', period: ''};
 

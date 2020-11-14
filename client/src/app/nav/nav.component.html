@@ -1,21 +1,25 @@
-<nav class="navbar sticky-top  navbar-expand-lg navbar-dark" style="background-color: #1976d2 ">
-  <a class="navbar-brand" href="#">
-      <img
-      width="40"
-      alt="Daniel Brito"
-      src="https://res.cloudinary.com/daniellimabrito/image/upload/v1580114219/nd14gkofuc9tnsvyelah.jpg"
-    />
-    <span style="padding-left: 10px;color: #eeeeee;font-weight: 600;">{{title}}</span>     
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="#" routerLinkActive="active" routerLink='agendaForm'>Agenda</a>
-      <a class="nav-link" href="#" routerLinkActive="active" routerLink='calendarForm'>Calendar</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" routerLink='register' aria-disabled="true">Login</a>
-    </div>
-  </div>
-</nav> 
+<div style="background-color: #1976d2">
+    <nav class="navbar sticky-top  navbar-expand-lg navbar-dark container" >
+        <a class="navbar-brand" href="#">
+            <img
+            width="40"
+            alt="Daniel Brito"
+            src="https://res.cloudinary.com/daniellimabrito/image/upload/v1580114219/nd14gkofuc9tnsvyelah.jpg"
+          />
+          <span style="padding-left: 10px;color: #eeeeee;font-weight: 600;">{{title}}</span>     
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" routerLinkActive="active" routerLink='agendaForm'>Agenda</a>
+            <a class="nav-link" href="#" routerLinkActive="active" routerLink='calendarForm'>Calendar</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" routerLink='login' aria-disabled="true">Login</a>
+            <!-- <a class="nav-link" href="#" routerLinkActive="active" routerLink='register'>Signup</a> -->
+      
+          </div>
+        </div>
+      </nav> 
+</div>

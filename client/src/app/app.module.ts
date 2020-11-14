@@ -21,6 +21,10 @@ import { CalendarFormComponent } from './calendar-form/calendar-form.component';
 import { CalendarModuleModule } from './calendar-module/calendar-module.module';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { FlatpickrModule } from 'angularx-flatpickr';
+import { HomeComponent } from './home/home.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -34,7 +38,9 @@ import { RegisterComponent } from './register/register.component';
       CalendarComponent,
       CalendarFormComponent,
       NavComponent,
-      RegisterComponent
+      RegisterComponent,
+      LoginComponent,
+      HomeComponent,
    ],
   imports: [
     BrowserModule,
@@ -42,6 +48,8 @@ import { RegisterComponent } from './register/register.component';
     RouterModule,
     HttpClientModule,
     FormsModule,
+    CommonModule,
+    FlatpickrModule.forRoot(),
     ReactiveFormsModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
