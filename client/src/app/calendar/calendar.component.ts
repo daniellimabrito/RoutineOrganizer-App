@@ -175,7 +175,7 @@ export class CalendarComponent implements OnInit {
           beforeStart: true,
           afterEnd: true,
         },
-      },
+      }
     ];
   }
 
@@ -194,4 +194,5 @@ export class CalendarComponent implements OnInit {
   ngOnInit() {
   }
 
+  close() {}
 }

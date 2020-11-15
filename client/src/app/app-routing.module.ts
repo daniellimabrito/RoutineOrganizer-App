@@ -3,14 +3,19 @@ import { Routes, RouterModule } from '@angular/router';
 import { AgendaFormComponent } from './agenda-form/agenda-form.component';
 import { CalendarFormComponent } from './calendar-form/calendar-form.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  { path: 'agendaForm', component: AgendaFormComponent},
-  { path: 'calendarForm', component: CalendarFormComponent},
-  { path: 'register', component: RegisterComponent},
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
 
-  { path: '', pathMatch: 'full', redirectTo: '' }
+  { path: 'home', component: HomeComponent, data: {animation: 'Home'}},
+  { path: 'agendaForm', component: AgendaFormComponent, data: {animation: 'AgendaForm'}},
+  { path: 'calendarForm', component: CalendarFormComponent, data: {animation: 'CalendarForm'}},
+  { path: 'login', component: LoginComponent, data: {animation: 'Login'}},
+  { path: 'register', component: RegisterComponent, data: {animation: 'Register'}}
+
 ];
 
 @NgModule({
