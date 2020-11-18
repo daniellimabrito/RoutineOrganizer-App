@@ -19,6 +19,7 @@ import { CalendarModuleComponent } from './calendar-module.component';
       useFactory: adapterFactory,
     }),
   ],
+  exports: [CalendarModuleComponent],
   declarations: [CalendarModuleComponent]
 })
 export class CalendarModuleModule { }

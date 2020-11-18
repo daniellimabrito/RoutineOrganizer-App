@@ -5,19 +5,23 @@
   </div>
 <div class="row">
   <div class="col-3">
-          <div class="col-12">
-                  <label></label>
-          </div>
-          <app-datepickermonth (selectedDate)="onChangeDate($event)"></app-datepickermonth>      
-          <div class="row">
-              <div class="col-12">
-                  <button form="formAgenda" class="btn btn-primary" [disabled]="!agendaForm.valid"><i class="fa fa-save"></i></button>
-                  <span style="padding-left: 10px;">
-                      <button (click)="deleteAgenda()" class="btn btn-primary" [disabled]="!agendaForm.valid"><i class="fa fa-trash"></i></button>
-                  </span>
-
-              </div>
-      </div>                                      
+    <div class="col-12">
+        <label></label>
+    </div>
+    <app-datepickermonth (selectedDate)="onChangeDate($event)"></app-datepickermonth>      
+    <div class="row">
+        <div class="col-12">
+            <button style="width: 40%;" form="formAgenda" class="btn btn-primary" [disabled]="!agendaForm.valid"><i class="fa fa-save"></i></button>
+            <span style="padding-left: 10px;">
+                <button (click)="deleteAgenda()" style="width: 40%;" class="btn btn-primary" [disabled]="!agendaForm.valid"><i class="fa fa-trash"></i></button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="padding-top: 15px;">
+            <button class="btn btn-success" style="width: 100%;" [routerLink]="['/calendarForm']" routerLinkActive="router-link-active"  ><i class="fa fa-calendar"></i> &nbsp; Calendar</button>
+        </div>
+    </div>                                      
     
     
   </div>
