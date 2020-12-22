@@ -12,7 +12,7 @@ import { slideInAnimation } from './route-animation';
   animations: [ slideInAnimation ]
 })
 export class AppComponent implements OnInit {
-  title = 'DLB Orginizer';
+  title = 'DLB Organizer';
   baseUrl = environment.apiUrl + 'agenda/';
   agendas: any;
 
